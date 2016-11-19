@@ -23,7 +23,7 @@ public class Foood
         findKeyword("I'm hungry.", "hungry", 0);
         findKeyword("Hello" ,"Hello", 0);
 
-        return "Hello, let's talk.";
+        return "Hello, what would you like to eat?";
     }
 
     /**
@@ -51,6 +51,28 @@ public class Foood
         {
             response = "What type of food would you like to eat?";
         }
+        else if (findKeyword(statement, "burrito") >= 0)
+        {
+            response = "How about Chipotle?";
+        }
+        else if (findKeyword(statement, "taco") >= 0)
+        {
+            response = "How about Taco Bell?";
+        }else if (findKeyword(statement, "waffle") >= 0
+        || findKeyword(statement, "pancake") >= 0)
+        {
+            response = "How about IHOP?";
+        }else if (findKeyword(statement, "chinese") >= 0)
+        {
+            response = "How about Panda Express?";
+        }else if (findKeyword(statement, "burger") >= 0)
+        {
+            response = "How about The Habit?";
+        }else if (findKeyword(statement, "sandwich") >= 0)
+        {
+            response = "How about Panera?";
+        }
+        
         else
         {
             response = getRandomResponse();
@@ -157,19 +179,19 @@ public class Foood
 
         if (whichResponse == 0)
         {
-            response = "Interesting, tell me more.";
+            response = "I'm sorry, I don't recognize that, but how about Vitality Bowl?";
         }
         else if (whichResponse == 1)
         {
-            response = "Hmmm.";
+            response = "I'm sorry, I don't recognize that, but how about Wendy's?";
         }
         else if (whichResponse == 2)
         {
-            response = "Do you really think so?";
+            response = "I'm sorry, I don't recognize that, but how about McDonald's?";
         }
         else if (whichResponse == 3)
         {
-            response = "You don't say.";
+            response = "I'm sorry, I don't recognize that, but how about Urban Plates?";
         }
 
         return response;
