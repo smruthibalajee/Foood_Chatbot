@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String\ getGreeting()
+comment0.text=\n\ Get\ a\ default\ greeting\n\ \n\ @return\ a\ greeting\n
+comment1.params=statement
+comment1.target=java.lang.String\ getResponse(java.lang.String)
+comment1.text=\n\ Gives\ a\ response\ to\ a\ user\ statement\n\ \n\ @param\ statement\n\ \ \ \ \ \ \ \ \ \ \ \ the\ user\ statement\n\ @return\ a\ response\ based\ on\ the\ rules\ given\n
+comment2.params=statement\ goal\ startPos
+comment2.target=int\ findKeyword(java.lang.String,\ java.lang.String,\ int)
+comment2.text=\n\ Search\ for\ one\ word\ in\ phrase.\ The\ search\ is\ not\ case\n\ sensitive.\ This\ method\ will\ check\ that\ the\ given\ goal\n\ is\ not\ a\ substring\ of\ a\ longer\ string\ (so,\ for\n\ example,\ "I\ know"\ does\ not\ contain\ "no").\n\ \n\ @param\ statement\n\ \ \ \ \ \ \ \ \ \ \ \ the\ string\ to\ search\n\ @param\ goal\n\ \ \ \ \ \ \ \ \ \ \ \ the\ string\ to\ search\ for\n\ @param\ startPos\n\ \ \ \ \ \ \ \ \ \ \ \ the\ character\ of\ the\ string\ to\ begin\ the\n\ \ \ \ \ \ \ \ \ \ \ \ search\ at\n\ @return\ the\ index\ of\ the\ first\ occurrence\ of\ goal\ in\n\ \ \ \ \ \ \ \ \ statement\ or\ -1\ if\ it's\ not\ found\n
+comment3.params=statement\ goal
+comment3.target=int\ findKeyword(java.lang.String,\ java.lang.String)
+comment3.text=\n\ Search\ for\ one\ word\ in\ phrase.\ The\ search\ is\ not\ case\n\ sensitive.\ This\ method\ will\ check\ that\ the\ given\ goal\n\ is\ not\ a\ substring\ of\ a\ longer\ string\ (so,\ for\n\ example,\ "I\ know"\ does\ not\ contain\ "no").\ The\ search\n\ begins\ at\ the\ beginning\ of\ the\ string.\n\ \n\ @param\ statement\n\ \ \ \ \ \ \ \ \ \ \ \ the\ string\ to\ search\n\ @param\ goal\n\ \ \ \ \ \ \ \ \ \ \ \ the\ string\ to\ search\ for\n\ @return\ the\ index\ of\ the\ first\ occurrence\ of\ goal\ in\n\ \ \ \ \ \ \ \ \ statement\ or\ -1\ if\ it's\ not\ found\n
+comment4.params=
+comment4.target=java.lang.String\ getRandomResponse()
+comment4.text=\n\ Pick\ a\ default\ response\ to\ use\ if\ nothing\ else\ fits.\n\ \n\ @return\ a\ non-committal\ string\n
+numComments=5
