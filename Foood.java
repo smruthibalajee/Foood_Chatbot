@@ -36,10 +36,13 @@ public class Foood
     public String getResponse(String statement)
     {
         String response = "";
+        //2a
+        //ii
         if (statement.length() == 0)
         {
             response = "Say something, please.";
         }
+        //iv
         else if (findKeyword(statement, "no") >= 0)
         {
             response = "What else would you like to eat?";
@@ -69,6 +72,30 @@ public class Foood
         {
             response = "How about The Habit?";
         }else if (findKeyword(statement, "sandwich") >= 0)
+        {
+            response = "How about Panera?";
+        }
+        else if (findKeyword(statement, "indian") >= 0)
+        {
+            response = "How about Chaat Bhavan?";
+        }
+          else if (findKeyword(statement, "italian") >= 0)
+        {
+            response = "How about Olive Garden?";
+        }
+          else if (findKeyword(statement, "mexican") >= 0)
+        {
+            response = "How about Chipotle?";
+        }
+          else if (findKeyword(statement, "crepes") >= 0)
+        {
+            response = "How about Blossom Bees?";
+        }
+          else if (findKeyword(statement, "ice cream") >= 0)
+        {
+            response = "How about The Mix?";
+        }
+        else if (findKeyword(statement, "soup") >= 0)
         {
             response = "How about Panera?";
         }
@@ -160,6 +187,7 @@ public class Foood
      * @return the index of the first occurrence of goal in
      *         statement or -1 if it's not found
      */
+    //3
     private int findKeyword(String statement, String goal)
     {
         return findKeyword(statement, goal, 0);
@@ -176,7 +204,8 @@ public class Foood
         double r = Math.random();
         int whichResponse = (int) (r * NUMBER_OF_RESPONSES);
         String response = "";
-
+        //2b
+        //i
         if (whichResponse == 0)
         {
             response = "I'm sorry, I don't recognize that, but how about Vitality Bowl?";
@@ -189,9 +218,28 @@ public class Foood
         {
             response = "I'm sorry, I don't recognize that, but how about McDonald's?";
         }
+        
         else if (whichResponse == 3)
         {
             response = "I'm sorry, I don't recognize that, but how about Urban Plates?";
+        }else if (whichResponse == 4)
+        {
+            response = "I'm sorry, I don't recognize that, but how about Lazy Dog?";
+        }else if (whichResponse == 5)
+        {
+            response = "I'm sorry, I don't recognize that, but how about BJ's Brewhouse?";
+        }else if (whichResponse == 6)
+        {
+            response = "I'm sorry, I don't recognize that, but how about Los Pericos?";
+            
+        }
+        else if (whichResponse == 7)
+        {
+            response = "I'm sorry, I don't recognize that, but how about Denica's?";
+        }
+        else if (whichResponse == 8)
+        {
+            response = "I'm sorry, I don't recognize that, but how about Bankok 101?";
         }
 
         return response;
